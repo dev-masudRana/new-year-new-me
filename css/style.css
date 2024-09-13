@@ -25,13 +25,14 @@ body {
   max-width: 1600px;
   min-height: 100vh;
   margin: 0 auto;
-  border-left: 1px solid #333;
-  border-right: 1px solid #333;
+  /* border-left: 1px solid lightgray; */
+  /* border-right: 1px solid lightgray; */
   box-shadow: 0 0 4px #333;
 }
 
 .header {
   background-image: url("../images/banner/banner1.png");
+  margin-bottom: 130px;
 }
 
 .header__content {
@@ -67,7 +68,7 @@ body {
 }
 
 .hero {
-  margin: 140px 0;
+  /* margin: 140px 0; */
   padding: 0 322px 0 277px;
   display: flex;
   justify-content: space-between;
@@ -106,4 +107,132 @@ body {
   width: 24px;
   height: 24px;
   color: red;
+  content: attr();
+}
+
+/* PLANS STYLES */
+.plans {
+  width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.plans h2 {
+  color: #151414;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.plans-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plans-container img {
+  width: 92.958px;
+  height: 92.958px;
+  margin-bottom: 20px;
+}
+
+.plans-container h3 {
+  color: #151414;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.plans-container p {
+  color: #737272;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* MINDSET STYLES */
+.mindset {
+  width: 1140px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 59px 64px;
+  background-image: url("../images/gradient2.png"), url("../images/watch.png");
+}
+
+.mindset h2 {
+  width: 449px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.mindset button {
+  padding: 20px 36px;
+  color: #f15b22;
+  font-size: 20px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 5px;
+}
+
+.footer {
+  margin-top: 130px;
+  padding: 130px 230px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  background: #000;
+  color: #fff;
+}
+
+.footer h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.future-description {
+  line-height: 26px;
+  margin-bottom: 24px;
+  max-width: 485px;
+}
+
+.future .email {
+  margin-bottom: 1rem;
+}
+
+.subscribe h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.subscribe input {
+  padding: 21px;
+  display: block;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font: inherit;
+  color: red;
+}
+
+.subscribe button {
+  padding: 20px 36px;
+  color: #f15b22;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 0;
 }
